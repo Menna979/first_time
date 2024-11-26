@@ -9,8 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Testing Github Actions'
-        run: pwd
+      - name: 'Folders Before'
+        run: ls
 
-      - name: 'Testing Print'
-        run: echo menna
+      - uses: actions/checkout@v3
+
+      - name: Folders After'
+        run: ls
